@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.row1 {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)) ,url(./hero-img.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-nav {
+    background-color: #ff0000;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+}
+
+ul {
+    float: right;
+    color: #000000;
+}
+
+.header-text-box {
+    text-align: center;
+    margin-top: 200px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.main-cta:link,
+.main-cta:visited,
+.main-cta:hover,
+.main-cta:active {
+    padding: 10px 15px;
+    background-color: #38b6ff;
+    border-radius: 5px;
+    color: #504949;
+    font-weight: bold;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.second-col {
+    margin-left: 3%;
+}
+
+.form-para {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.submit-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 15px;
+    background-color: #38b6ff;
+    border: none;
+    border-radius: 5px;
+    color: #504949;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #E0521B;
+    padding: 40px 0;
+    color: #ffffff;
+}
+
+.footer-links {
+    list-style: none;
+    color: #ffffff;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+    color: #ffffff;
+}
+
+textarea {
+    width: 93%;
+}

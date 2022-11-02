@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>CodeBuddy - Meet your coding partner</title>
+        <script>
+
+          function change() {
+            let color_element = document.querySelector("#color-change");
+            if (color_element.style.color == "#ff0000")
+            {
+              color_element.style.color = "#0000ff";
+            }
+            else
+            {
+              color_element.style.color = "#ff0000";
+            }
+          }
+
+          window.setInterval(change, 500);
+          function alert1()
+          {
+            alert("Form submit");
+          }
+
+        </script>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="./index.html"><img class = "logo" src = "./Codebuddy_logo.svg"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./course.html">Courses</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div class = "header-text-box">
+                <h1>Searching For a <span id="color-change" style="color: #0000ff;">Code Buddy?</span></h1>
+                <a href = "#form-section" class = "main-cta">Get one here</a>
+            </div>
+        </header>
+        <main>
+          <section class = "form-section" id = "form-section">
+            <div class="row1">
+            <h2>Fill the form & Get match with your coding partner</h2>
+          </div>
+            <div class = "row1">
+              <form onsubmit="alert1()">
+                <input type="text" placeholder="Full name">
+                <input type="email" placeholder="Email" class="second-col">
+                <input type="text" placeholder="Country">
+                <input type="text" placeholder="City" class="second-col">
+                <input type="text" placeholder="Technology you are learning">
+                <input type="text" placeholder="Course from which you are learning" class="second-col">
+                <p class = "form-para">Your learning level?</p>
+                <select>
+                  <option>Beginner</option>
+                  <option>Intermediate</option>
+                  <option>Advance</option>
+                </select>
+                <button type = "submit" class="submit-btn">Submit</button>
+              </form>
+            </div>
+          </section>
+        </main>
+        <footer>
+          <div class = "row1">
+            <a href = "./index.html"><img class = "logo" src = "./Codebuddy_logo.svg"></a>
+            <ul class="footer-links">
+              <a href="./index.html"><li>Home</li></a>
+              <a href="./contact.html"><li>Contact</li></a>
+              <a href="./about.html"><li>About</li></a>
+              <a href="./course.html"><li>Courses</li></a>
+            </ul>
+          </div>
+        </footer>
+
+    </body>
+</html>
