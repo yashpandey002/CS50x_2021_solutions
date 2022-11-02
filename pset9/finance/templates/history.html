@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <tr>
+                <td>Symbol</td>
+                <td>Shares</td>
+                <td>Price</td>
+                <td>Transacted</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+                <tr>
+                    <td>{{ row.shr_symbol }}</td>
+                    <td>{{ row.shr_qty }}</td>
+                    <td>{{ usd(row.shr_price) }}</td>
+                    <td>{{ row.time }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

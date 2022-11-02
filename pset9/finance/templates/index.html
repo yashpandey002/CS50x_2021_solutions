@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <tr>
+                <td>Symbol</td>
+                <td>Name</td>
+                <td>Shares</td>
+                <td>Price</td>
+                <td>TOTAL</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in shr_info %}
+                <tr>
+                    <td>{{ row.shr_symbol }}</td>
+                    <td>{{ row.shr_name }}</td>
+                    <td>{{ row.shr_qty }}</td>
+                    <td>{{ usd(row.shr_price) }}</td>
+                    <td>{{ usd(row.shr_qty * row.shr_price) }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"><strong>Cash</strong></td>
+                <td>{{ usd(cash) }}</td>
+            </tr>
+            <tr>
+                <td colspan="4"><strong>TOTAL</strong></td>
+                <td>{{ usd(total_cash) }}</td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}

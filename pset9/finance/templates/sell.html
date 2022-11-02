@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}Quote{% endblock %}
+
+{% block main %}
+    <form action="/sell" method="post">
+        <select name="symbol">
+            {% for symbol in symbols %}
+                <option>{{ symbol.shr_symbol}}</option>
+            {% endfor %}
+        </select>
+        <input type="number" min="1" name="shares" autocomplete="off" placeholder="Shares">
+        <button type="submit">Sell</button>
+    </form>
+{% endblock %}
