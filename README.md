@@ -2,7 +2,7 @@
 Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web programming. Languages include C, Python, and SQL plus HTML, CSS, and JavaScript. Problem sets inspired by the arts, humanities, social sciences, and sciences. Course culminates in a final project. Designed for concentrators and non-concentrators alike, with or without prior programming experience. Two thirds of CS50 students have never taken CS before. Among the overarching goals of this course are to inspire students to explore unfamiliar waters, without fear of failure, create an intensive, shared experience, accessible to all students, and build community among students.
 ## [Academic Honesty](https://cs50.harvard.edu/x/2021/honesty/)
 
-- [Problem Set 0: Scratch :smiley_cat:](https://scratch.mit.edu/projects/754751811/)
+- [Problem Set 0: Scratch](https://scratch.mit.edu/projects/754751811/)
 
 - [Problem Set 1: C](/pset1)
 
@@ -20,7 +20,7 @@ Introduction to the intellectual enterprises of computer science and the art of 
   - [plurality](pset3/plurality)
   - [tideman](pset3/tideman)
 
-- [Lab 4: Volume :musical_note:](/lab4)
+- [Lab 4: Volume](/lab4)
 
 - [Problem Set 4: Memory](/pset4)
   - [filter](/pset4/filter-less/)
@@ -38,8 +38,8 @@ Introduction to the intellectual enterprises of computer science and the art of 
   - mario
     - [less](/pset6/mario/less)
     - [more](/pset6/mario/more)
-  - [cash :moneybag:](/pset6/cash)
-  - [credit :credit_card:](/pset6/credit)
+  - [cash](/pset6/cash)
+  - [credit](/pset6/credit)
   - [readability](/pset6/readability/)
   - [dna](/pset6/dna)
 
@@ -53,6 +53,6 @@ Introduction to the intellectual enterprises of computer science and the art of 
 
 - [Problem Set 8: Homepage](/pset8/homepage)
 
-- [Lab 9: Birthdays 🎂](/lab9) 
+- [Lab 9: Birthdays](/lab9) 
 
 - [Problem Set 9: Finance](/pset9/finance)
