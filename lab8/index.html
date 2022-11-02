@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+
+            function global()
+            {
+                let gandhi = document.querySelector('#gandhi');
+                let gandhi_ans = document.querySelector('#gandhi_ans');
+
+                let nehru = document.querySelector('#nehru');
+                let nehru_ans = document.querySelector('#nehru_ans');
+
+                let modi = document.querySelector('#modi');
+                let modi_ans = document.querySelector('#modi_ans');
+
+                let kalam = document.querySelector('#kalam');
+                let kalam_ans = document.querySelector('#kalam_ans');
+
+                document.querySelector('#gandhi').onclick = function (){
+                    gandhi.style.backgroundColor = 'red';
+                    gandhi_ans.style.display = 'block';
+                };
+                document.querySelector('#nehru').onclick = function (){
+                    nehru.style.backgroundColor = 'green';
+                    nehru_ans.style.display = 'block';
+                };
+                document.querySelector('#modi').onclick = function (){
+                    modi.style.backgroundColor = 'red';
+                    modi_ans.style.display = 'block';
+                };
+                document.querySelector('#kalam').onclick = function (){
+                    kalam.style.backgroundColor = 'red';
+                    kalam_ans.style.display = 'block';
+                };
+            }
+
+            function show_response() {
+                let input = document.querySelector('#input_text');
+                let answer = document.querySelector('#input_text').value;
+                let correct = document.querySelector('#free_ans-corr');
+                let incorrect = document.querySelector('#free_ans-incorr');
+
+                if (answer == "amir")
+                {
+                    incorrect.style.display = 'none';
+                    correct.style.display = 'block';
+                    input.style.border = '2px solid green';
+                }
+                else
+                {
+                    correct.style.display = 'none';
+                    incorrect.style.display = 'block';
+                    input.style.border = '2px solid red';
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', global);
+
+        </script>
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Who is the first prime minister of India?</h3>
+
+                <div>
+                    <button id = "gandhi">Mahatma Gandhi</button>
+                    <p id = "gandhi_ans">Incorrect</p>
+                </div>
+                <div>
+                    <button id = "nehru">Jawaharlal Nehru</button>
+                    <p id = "nehru_ans">Correct</p>
+                </div>
+                <div>
+                    <button id = "modi">Narendra Modi</button>
+                    <p id = "modi_ans">Incorrect</p>
+                </div>
+                <div>
+                    <button id = "kalam">Dr. APJ Abdul Kalam</button>
+                    <p id = "kalam_ans">Incorrect</p>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>Who is main actor of movie 3 Idiots?</h3>
+
+                <form onsubmit = "show_response(); return false;">
+                    <input type = 'text' id  = "input_text">
+                    <button type = 'submit'>Submit</button>
+                    <p style = "color: green; display:none;" id = "free_ans-corr">Correct</p>
+                    <p style = "color: red; display:none;" id = "free_ans-incorr">Incorrect</p>
+                </form>
+            </div>
+
+        </div>
+
+
+    </body>
+</html>
